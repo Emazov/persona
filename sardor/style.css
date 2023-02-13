@@ -1,0 +1,8 @@
+.personality__content-wrap:first-child:after {
+	position: absolute;
+	left: 2%;
+}
+
+.technology__item-span::after {
+	width: 90%;
+}

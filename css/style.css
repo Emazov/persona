@@ -209,17 +209,27 @@ a:hover {
 	background-color: rgba(0, 16, 61, 0.14);
 }
 
-.technology__item-span:first-child::after {
+.technology__item-span:after {
 	content: '';
-	height: 15px;
-	width: 80%;
-}
-
-.technology__item-span::after {
-	content: '';
+	display: inline-block;
 	position: absolute;
 	left: 0;
 	height: 15px;
-	width: 20%;
+	height: 15px;
 	background-color: #919399;
+}
+
+.technology__item:nth-child(-n + 2) .technology__item-span:after {
+	content: '';
+	width: 80%;
+}
+
+.technology__item:nth-child(3) .technology__item-span:after {
+	content: '';
+	width: 60%;
+}
+
+.technology__item:last-child .technology__item-span:after {
+	content: '';
+	width: 40%;
 }
